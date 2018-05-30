@@ -1,0 +1,2 @@
+rsync --delete  -rtvu /Users/santosha/Box\ Sync/ivy2/cache/ /Users/santosha/.ivy2/cache/
+rsync --delete -rtvu /Users/santosha/Box\ Sync/ivy2/local/ /Users/santosha/.ivy2/local/
