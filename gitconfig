@@ -1,8 +1,10 @@
 [core]
-	excludesfile = /Users/ezoern/.gitignore
+        excludesfile = ~/.gitignore
 	autocrlf = input
 [user]
 	name = Eric Zoerner
-	email = eric.zoerner@nike.com
+	email = eric.zoerner@gmail.com
+[credential]
+	helper = osxkeychain
 [alias]
 	tree = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --all
