@@ -1,0 +1,4 @@
+#!/bin/sh
+exec scala "$0" "$@"
+!#
+println(f"${args(0).toLong*1000}%tc")
