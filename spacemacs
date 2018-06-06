@@ -51,7 +51,9 @@ values."
      syntax-checking
      version-control
      osx
-     haskell
+     (haskell :variables
+              haskell-completion-backend 'intero
+              haskell-enable-hindent-style "johan-tibell")
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -69,16 +71,7 @@ values."
    ;; `used-but-keep-unused' installs only the used packages but won't uninstall
    ;; them if they become unused. `all' installs *all* packages supported by
    ;; Spacemacs and never uninstall them. (default is `used-only')
-   dotspacemacs-install-packages 'used-only)
-
-  (setq-default dotspacemacs-configuration-layers
-                '(auto-completion
-                  (haskell :variables haskell-completion-backend 'intero)))
-
-  (setq-default dotspacemacs-configuration-layers
-                '((haskell :variables haskell-enable-hindent-style "johan-tibell")))
-
-  )
+   dotspacemacs-install-packages 'used-only))
 
 
 (defun dotspacemacs/init ()
