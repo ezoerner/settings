@@ -132,9 +132,3 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
-# Ensime specific
-.ensime
-.ensime_cache/
-.ensime_lucene/
-ensime.sbt
-
