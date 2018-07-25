@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source /Users/ezoern/Developer/gimme-aws-creds/venv/bin/activate
+
+gimme-aws-creds --profile "$1"
+
+deactivate
