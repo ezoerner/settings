@@ -1,4 +1,4 @@
 # link ~/espeak-data to settings/espeak-data
 # see http://espeak.sourceforge.net
 # example:  ipa "This is a test"
-speak -q --ipa "$1"
+speak -q --ipa -ven-us "$1"
