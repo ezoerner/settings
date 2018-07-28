@@ -1,0 +1,12 @@
+cd
+ln -fhs ../settings/ammonite/predef.sc .ammonite/predef.sc
+ln -fhs settings/gitconfig .gitconfig
+ln -fhs settings/ghci.conf .ghci.conf 
+ln -fhs settings/spacemacs .spacemacs 
+ln -Fhs settings/espeak-data espeak-data
+ln -fhs ../../../settings/sbt/1.0/plugins/plugins.sbt .sbt/1.0/plugins/plugins.sbt
+ln -Fhs settings/bin bin
+ln -fhs ../settings/stack/config.yaml .stack/config.yaml
+ln -fhs ../../settings/stack/global-project/stack.yaml .stack/global-project/stack.yaml
+ln -fhs settings/profile .profile 
+
