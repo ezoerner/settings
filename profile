@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
@@ -27,8 +31,6 @@ function setjdk() {
  function removeFromPath() {  
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")  
  }
-
-alias scalariform="scalariform -p=/Users/ezoern/Dropbox/user/Developer/settings/scalariform.properties -r"
 
 alias goa="docker run --rm -it ezoerner/goa"
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
