@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source /Users/ezoern/Developer/gimme-aws-creds/venv/bin/activate
+source $HOME/Developer/gimme-aws-creds/virt/bin/activate
 
 gimme-aws-creds --profile "$1"
 
