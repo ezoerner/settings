@@ -32,6 +32,8 @@ function setjdk() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")  
  }
 
+alias python=python3
+alias pip=pip3
 alias kc='kubectl $@' 
 alias goa="docker run --rm -it ezoerner/goa:1.0"
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"

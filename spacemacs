@@ -332,7 +332,8 @@ you should place your code here."
  '(read-quoted-char-radix 16)
  '(safe-local-variable-values
    (quote
-    ((intero-targets "morse:lib" "morse:exe:morse" "morse:test:tests")
+    ((intero-targets "granite-example:exe:granite-example" "granite-example:test:granite-example-test")
+     (intero-targets "morse:lib" "morse:exe:morse" "morse:test:tests")
      (intero-targets "example-project:lib" "example-project:test:example-project-test")
      (intero-targets "hangman:exe:hangman")
      (intero-targets "github-client:lib" "github-client:test:github-client-test")))))
