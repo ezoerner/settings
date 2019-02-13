@@ -317,6 +317,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (spacemacs/add-to-hooks 'turn-on-fci-mode '(haskell-mode-hook))
   (spacemacs/add-to-hooks 'spacemacs/toggle-truncate-lines-off '(haskell-mode-hook))
+  (setq-default fill-column 78)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -333,6 +334,7 @@ you should place your code here."
  '(safe-local-variable-values
    (quote
     ((intero-targets "granite-example:exe:granite-example" "granite-example:test:granite-example-test")
+     (intero-targets "hire-backend:lib" "hire-backend:exe:hire-backend-exe")
      (intero-targets "morse:lib" "morse:exe:morse" "morse:test:tests")
      (intero-targets "example-project:lib" "example-project:test:example-project-test")
      (intero-targets "hangman:exe:hangman")

@@ -6,6 +6,8 @@ export GITAWAREPROMPT=$HOME/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+
 export PATH=$HOME/bin:$HOME/Developer/workspace/squid_toolkit:$PATH
 export CONSCRIPT_HOME="$HOME/.conscript"
 export CONSCRIPT_OPTS="-Dfile.encoding=UTF-8"
