@@ -34,7 +34,12 @@ function setjdk() {
 
 alias python=python3
 alias pip=pip3
+
 alias kc='kubectl $@' 
+alias kcc='kubectl config current-context'
+alias kcp='kubectl config use-context k8s.us-east-1.plus.nikecloud.com'
+alias kct='kubectl config use-context k8s.us-east-1.test-plus.nikecloud.com'
+
 alias goa="docker run --rm -it ezoerner/goa:1.0"
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
 #set -o vi

@@ -332,7 +332,9 @@ you should place your code here."
  '(read-quoted-char-radix 16)
  '(safe-local-variable-values
    (quote
-    ((intero-targets "granite-example:exe:granite-example" "granite-example:test:granite-example-test")
+    ((intero-targets "example-project:lib" "example-project:exe:example-project" "example-project:test:example-project-test")
+     (intero-targets "hire-backend:lib" "hire-backend:exe:hire-backend-exe" "hire-backend:test:hire-backend-test")
+     (intero-targets "granite-example:exe:granite-example" "granite-example:test:granite-example-test")
      (intero-targets "morse:lib" "morse:exe:morse" "morse:test:tests")
      (intero-targets "example-project:lib" "example-project:test:example-project-test")
      (intero-targets "hangman:exe:hangman")
