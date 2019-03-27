@@ -317,6 +317,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (spacemacs/add-to-hooks 'turn-on-fci-mode '(haskell-mode-hook))
   (spacemacs/add-to-hooks 'spacemacs/toggle-truncate-lines-off '(haskell-mode-hook))
+  (setq-default fill-column 78)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
