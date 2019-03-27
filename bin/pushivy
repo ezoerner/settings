@@ -1,2 +1,2 @@
-rsync --delete -rtvu ~/.ivy2/cache/ ~/Box\ Sync/ivy2/cache/
-rsync --delete -rtvu ~/.ivy2/local/ ~/Box\ Sync/ivy2/local/
+rsync --delete -rtvu ~/.ivy2/cache/ /Volumes/KINGSTON/ivy2/cache/
+rsync --delete -rtvu ~/.ivy2/local/ /Volumes/KINGSTON/ivy2/local/
