@@ -1,7 +1,11 @@
 cd
+mkdir -p .ammonite
+mkdir -p .ghc
+mkdir -p .sbt/1.0/plugins
+mkdir -p .stack/global-project
 ln -fhs ../settings/ammonite/predef.sc .ammonite/predef.sc
 ln -fhs settings/gitconfig .gitconfig
-ln -fhs settings/ghci.conf .ghci.conf 
+ln -fhs ../settings/ghci.conf .ghc/ghci.conf 
 ln -fhs settings/spacemacs .spacemacs 
 ln -Fhs settings/espeak-data espeak-data
 ln -fhs ../../../settings/sbt/1.0/plugins/plugins.sbt .sbt/1.0/plugins/plugins.sbt

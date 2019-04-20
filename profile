@@ -9,13 +9,10 @@ export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 export PATH=$HOME/bin:$HOME/Developer/workspace/squid_toolkit:$PATH
-export CONSCRIPT_HOME="$HOME/.conscript"
-export CONSCRIPT_OPTS="-Dfile.encoding=UTF-8"
-export PATH=$CONSCRIPT_HOME/bin:$PATH
 export PATH=$HOME/Developer/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR=vim
 
-cloud() { ssh_me_calmly -i $HOME/.ssh/${1}.pem -u kratos -h $2 ; }
 
 function setjdk() {  
   if [ $# -ne 0 ]; then  
@@ -39,11 +36,12 @@ alias pip=pip3
 
 alias kc='kubectl $@' 
 alias kcc='kubectl config current-context'
-alias kcp='kubectl config use-context k8s.us-east-1.plus.nikecloud.com'
-alias kct='kubectl config use-context k8s.us-east-1.test-plus.nikecloud.com'
 
 alias goa="docker run --rm -it ezoerner/goa:1.0"
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
 #set -o vi
 
 #stack ghci --package turtle
+
+alias p="psql -U tripshot -d tripshot -h localhost "
+
