@@ -8,7 +8,6 @@ export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ 
 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
-export PATH=$HOME/bin:$HOME/Developer/workspace/squid_toolkit:$PATH
 export PATH=$HOME/Developer/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export EDITOR=vim
