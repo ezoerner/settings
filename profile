@@ -8,7 +8,7 @@ export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ 
 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
-export PATH=$HOME/Developer/bin:$PATH
+export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export EDITOR=vim
 
@@ -43,4 +43,6 @@ alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
 #stack ghci --package turtle
 
 alias p="psql -U tripshot -d tripshot -h localhost "
+
+alias sx="stack exec"
 
