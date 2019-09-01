@@ -9,6 +9,7 @@ export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.cabal/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export EDITOR=vim
 
@@ -43,6 +44,8 @@ alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
 #stack ghci --package turtle
 
 alias p="psql -U tripshot -d tripshot -h localhost "
+alias t="stack exec t -- "
 
 alias sx="stack exec"
 
+if [ -e /Users/ezoerner/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/ezoerner/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

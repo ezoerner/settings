@@ -73,7 +73,6 @@ fabric.properties
 *~
 \#*\#
 /.emacs.desktop
-/.emacs.desktop.lock
 *.elc
 auto-save-list
 tramp
@@ -132,3 +131,15 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# "local" files
+ezoerner*
+
+# ?
+/*.lock
