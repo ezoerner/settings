@@ -8,4 +8,4 @@
 #
 packages: []
 
-resolver: lts-14.4
+resolver: lts-14.7
