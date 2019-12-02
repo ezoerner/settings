@@ -132,11 +132,7 @@ cscope.in.out
 cscope.po.out
 
 # VS Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode/
 
 # "local" files
 ezoerner*
