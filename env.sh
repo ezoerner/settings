@@ -13,6 +13,14 @@ function r() { grep "$1" ${@:2} -R . }
 # Create a folder and move into it in one command
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
-# Example aliases
+# aliases
 alias g='git'
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
+
+# git prompt
+#source ~/settings/git-prompt.sh
+
+#setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
+#precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
+#export GIT_PS1_SHOWDIRTYSTATE=1
+
