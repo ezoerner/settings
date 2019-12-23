@@ -14,8 +14,8 @@ function r() { grep "$1" ${@:2} -R . }
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # aliases
-alias g='git'
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
+export _git_log_oneline_format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 # git prompt
 #source ~/settings/git-prompt.sh
