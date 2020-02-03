@@ -1,6 +1,7 @@
 [core]
         excludesfile = ~/settings/gitignore_global
 	autocrlf = input
+        editor = vim
 [user]
 	name = Eric Zoerner
 	email = eric.zoerner@gmail.com

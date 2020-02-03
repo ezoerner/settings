@@ -5,6 +5,7 @@ export PATH=~/.local/bin:$PATH
 
 # Specify default editor. Possible values: vim, nano, ed etc.
 export EDITOR=vim
+export VISUAL=vim
 
 # File search functions
 function f() { find . -iname "*$1*" ${@:2} }
@@ -15,6 +16,7 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # aliases
 alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
+
 export _git_log_oneline_format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 # git prompt
@@ -23,4 +25,5 @@ export _git_log_oneline_format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%
 #setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
 #precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
 #export GIT_PS1_SHOWDIRTYSTATE=1
+
 
