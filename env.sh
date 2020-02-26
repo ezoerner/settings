@@ -2,6 +2,7 @@
 
 # Add commonly used folders to $PATH
 export PATH=~/.local/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
 
 # Specify default editor. Possible values: vim, nano, ed etc.
 export EDITOR=vim
@@ -15,7 +16,7 @@ function r() { grep "$1" ${@:2} -R . }
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # aliases
-alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
+#alias lambdabot="docker run --rm -it ezoerner/lambdabot-cli"
 
 export _git_log_oneline_format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
