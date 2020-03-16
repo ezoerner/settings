@@ -3,6 +3,7 @@
 # Add commonly used folders to $PATH
 export PATH=~/.local/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
+export PATH=~/bin:$PATH
 
 # Specify default editor. Possible values: vim, nano, ed etc.
 export EDITOR=vim
