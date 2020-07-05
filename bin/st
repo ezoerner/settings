@@ -1,1 +1,0 @@
-ssh -F ~/.ssh/piggyback -i ~/.ssh/plus-test.pem $1 -l kratos

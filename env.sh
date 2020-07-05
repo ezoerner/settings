@@ -28,4 +28,5 @@ export _git_log_oneline_format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%
 #precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
 #export GIT_PS1_SHOWDIRTYSTATE=1
 
+. ~/.nix-profile/etc/profile.d/nix.sh
 
